@@ -1,0 +1,155 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#search-input {
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  bottom: 0;
+  align-content: end;
+}
+
+#movie-details {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+a {
+  color: #0078d4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+fieldset {
+  margin: 40px;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+}
+
+.loading {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.loading.active {
+  display: flex;
+}
+
+.placeholder {
+  text-align: center;
+  padding: 64px;
+  color: #858585;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  flex: 1;
+}
+
+.film-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.film-year {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.film-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.film-image {
+  width: 280px;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 2%;
+}
